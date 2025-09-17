@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Fashion Shoes</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('./Pictures/T-Shirts.jpg');
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .hero {
+            position: relative;
+            height: 80vh;
+            background-image: url('./Pictures/hero5.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h1 {
+            position: absolute;
+            bottom: 20px;
+            right: 200px;
+            color: black;
+            font-size: 48px;
+            margin: 10;
+            background: -webkit-linear-gradient(#958E69, #000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section-header {
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        .section-header h2 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            background: -webkit-linear-gradient(#958E69, #000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section-header p {
+            font-size: 18px;
+            background: -webkit-linear-gradient(#958E69, #000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .featured-products {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .featured-products .product {
+            width: calc(33.333% - 20px);
+            margin: 10px;
+            text-align: center
+        }
+
+        .featured-products .product img {
+            max-width: 100%;
+            transition: transform 0.3s;
+        }
+
+        .featured-products .product:hover img {
+            transform: scale(1.1);
+        }
+
+        .featured-products .product h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            background: -webkit-linear-gradient(#958E69, #000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .featured-products .product p {
+            font-size: 18px;
+            background: -webkit-linear-gradient(#958E69, #000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .footer {
+            background-color: #000;
+            font-size: medium;
+            font-weight: 500;
+            color: #fff;
+            text-align: center;
+            align-items: center;
+        }
+
+        .footer a {
+            font-size: medium;
+            font-weight: 500;
+            color: #fff;
+            margin: 40px;
+
+        }
+
+        .links {
+            background-color: #162087;
+            font-size: medium;
+            font-weight: 500;
+            color: #fff;
+            margin: 10px;
+            text-align: center;
+            align-items: center;
+        }
+
+        .links a i {
+            font-size: medium;
+            font-weight: 500;
+            color: #fff;
+            margin: 40px;
+        }
+
+        .links a span {
+            font-size: 20px;
+            font-weight: 500;
+            color: #fff;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="hero">
+        <h1>Shoes</h1>
+    </header>
+
+    <section id="featured" class="featured">
+
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Products</h2>
+                <p>Check Out Our Latest Arrivals</p>
+            </div>
+
+            <div class="featured-products">
+                <div class="product">
+                    <a href="Shipment.html">
+                        <img src="Pictures/product13.jpg" alt="Product Image">
+                        <h3>Men Leather Formal Business Shoes - Black</h3>
+                        <p>$49.99</p>
+                </div>
+
+                <div class="product">
+                    <a href="Shipment.html">
+                        <img src="Pictures/product14.jpg" alt="Product Image">
+                        <h3>Men Leather Formal Business Shoes - Light Brown</h3>
+                        <p>$59.99</p>
+                </div>
+
+                <div class="product">
+                    <a href="Shipment.html">
+                        <img src="Pictures/product15.jpg" alt="Product Image">
+                        <h3>Men Leather Formal Business Shoes - Brown</h3>
+                        <p>$39.99</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <div class="links">
+        <a href="https://www.facebook.com">
+            <i class='bx bxl-facebook-circle'></i>
+            <span>Facebook</span>
+        </a>
+
+        <a href="https://www.instagram.com">
+            <i class='bx bxl-instagram-alt'></i>
+            <span>Instagram</span>
+        </a>
+
+        <a href="https://www.twitter.com">
+            <i class='bx bxl-twitter'></i>
+            <span>Instagram</span>
+        </a>
+
+        <a href="https://www.tiktok.com">
+            <i class='bx bxl-tiktok'></i>
+            <span>tiktok</span>
+        </a>
+    </div>
+
+    <footer class="footer">
+        <a href="#">Conditions of Use</a>
+        <a href="#">Privacy Notice</a>
+        <a href="#">Your Ads Privacy Choices</a>
+        <p>© 2020-2023, Amazon.com, Inc. or its affiliates</p>
+    </footer>
+</body>
+
+</html>

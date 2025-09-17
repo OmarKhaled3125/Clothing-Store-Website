@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <style>
+	
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('./Pictures/Shipment\ &\ Payment.jpg');
+        }
+		
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+		
+        .form-container {
+            background-color: transparent;
+            border: 1px solid black;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+			border-radius: 20px;
+        }
+		
+        form {
+            display: flex;
+            flex-wrap: wrap;
+        }
+		
+        form label {
+            display: block;
+            width: 100%;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+		
+        form input[type="text"],
+        form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 2px solid #ddd;
+            background-color: transparent;
+        }
+		
+        .Shipment-btn button {
+            width: 500px;
+            height: 40px;
+            border-radius: 50px;
+            outline: none;
+            border: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 1s;
+			margin-left: 20px;
+        }
+		
+        .Shipment-btn button:hover {
+            background-color: #82CA9D;
+            border: 1px solid #fff;
+            color: #fff;
+            cursor:pointer
+        }
+		
+    </style>
+	
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Shipment Information</h2>
+        <div class="form-container">
+		
+          <form>
+              <label for="name">Full Name:</label>
+              <input type="text" id="name" name="name">
+              <label for="address">Address:</label>
+              <input type="text" id="address" name="address">
+              <label for="city">City:</label>
+              <input type="text" id="city" name="city">
+              <label for="zip">Zip Code:</label>
+              <input type="text" id="zip" name="zip">
+              <label for="country">Country:</label>
+              <select id="country" name="country">
+                  <option value="">--Please choose an option--</option>
+                  <option value="usa">USA</option>
+                  <option value="canada">Canada</option>
+                  <option value="egypt">Egypt</option>
+              </select>
+			  
+              <div class="Shipment-btn">
+                  <button type="button" onclick="payment()">Register</button>
+              </div>
+			  
+          </form>
+		  
+          </div>
+		  
+          <script>
+		  
+          function payment() {
+                      window.location.href = "Payment.html";
+                  }				
+          </script>		
+		  
+    </div>	
+	
+</body>	
+
+</html>
